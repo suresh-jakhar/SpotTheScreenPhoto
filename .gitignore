@@ -1,0 +1,9 @@
+/dataset
+/new_screen_pics
+/unseen_predic_test
+/.venv
+/__pycache__
+*.pyc
+*.pyo
+cnn_model_backup.pt
+.DS_Store
