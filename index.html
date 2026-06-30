@@ -140,11 +140,15 @@ function showResult(screenProb) {
 
 async function run() {
   status.textContent = 'Loading model…';
+
+  ort.env.wasm.numThreads = 1;
+  ort.env.wasm.wasmPaths  = 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.20.1/dist/';
+
   let session;
   try {
     session = await ort.InferenceSession.create('cnn_model.onnx');
   } catch(e) {
-    status.textContent = 'Could not load cnn_model.onnx — make sure it is in the same folder.';
+    status.textContent = 'Model error: ' + e.message;
     return;
   }
 
