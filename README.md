@@ -1,7 +1,7 @@
 # Spot the Fake Photo
 A hybrid screen-recapture detection model built to run efficiently on CPU.
 
-Live Demo : https://huggingface.co/spaces/sureshjakhar/SpotTheScreenPhoto
+#### Live Demo: https://huggingface.co/spaces/sureshjakhar/SpotTheScreenPhoto
 ---
 
 ## Development Narrative & Iteration
