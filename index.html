@@ -131,7 +131,7 @@ function showResult(screenProb) {
   const pct = Math.round(screenProb * 100);
   const isScreen = screenProb > 0.5;
 
-  label.textContent     = isScreen ? '📱 SCREEN' : '📷 REAL';
+  label.textContent     = isScreen ? 'SCREEN' : 'REAL';
   label.style.color     = isScreen ? '#f87171' : '#4ade80';
   bar.style.width       = pct + '%';
   bar.style.background  = isScreen ? '#f87171' : '#4ade80';
